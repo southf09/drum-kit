@@ -1,15 +1,6 @@
 let drumButtons = document.querySelectorAll(".drum");
 
-//Two techniques for adding event listeners to all buttons
-
-//Using .forEach()
-// buttons.forEach((button) => {
-//   button.addEventListener("click", () => {
-//     alert("clicked");
-//   });
-// });
-
-//Using a for loop
+//Using a for loop in conjunction with querySelectorAll()
 for (let i = 0; i < drumButtons.length; i++) {
   document.querySelectorAll(".drum")[i].addEventListener("click", function () {
     let buttonInnerHTML = this.innerHTML;
@@ -54,6 +45,3 @@ for (let i = 0; i < drumButtons.length; i++) {
     }
   });
 }
-
-// let tom1 = new Audio("sounds/tom-1.mp3");
-// tom1.play();
